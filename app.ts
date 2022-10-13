@@ -1,2 +1,5 @@
-console.log("hello ts config");
-const Name = "kyaw zin thant";
+const btn = document.querySelector("button")!;
+
+btn.addEventListener("click", () => {
+  console.log("clicked");
+});
