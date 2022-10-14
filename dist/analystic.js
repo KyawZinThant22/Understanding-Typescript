@@ -1,2 +1,5 @@
 "use strict";
-console.log("sending...");
+function strict(string) {
+    console.log(string);
+}
+strict("kyaw");

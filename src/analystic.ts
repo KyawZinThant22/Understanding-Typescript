@@ -1,1 +1,5 @@
-console.log("sending...");
+function strict(string: string): void {
+  console.log(string);
+}
+
+strict("kyaw");
