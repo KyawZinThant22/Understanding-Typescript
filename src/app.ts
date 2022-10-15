@@ -1,5 +1,16 @@
-const btn = document.querySelector("button")!;
+let name1 = "kyawzinthant";
 
-btn.addEventListener("click", () => {
-  console.log("clicked");
-});
+name1 =
+  "what is the meaning of life and how can we survive in this cruel world";
+
+const name2 = "kyawkyaw";
+// name2="mgmg"
+
+var namename = "kyaw";
+function gen() {
+  console.log("function", namename);
+}
+
+console.log(namename);
+
+gen();
