@@ -50,10 +50,10 @@ if (MarkHigherJohn) {
 //   console.log("draw");
 // }
 // coding challenges 4
-const CalculateTips = (value) => {
-    return value > 50 && value < 300
-        ? `The bill was ${value}, the tip was ${value * (15 / 100)}, and the total value ${value + (value * 15) / 100}”`
-        : `The bill was ${value}, the tip was ${value * (20 / 100)}, and the total value ${value + (value * 20) / 100}”`;
-};
-console.log(CalculateTips(400));
+// const CalculateTips = (value) => {
+//     return value > 50 && value < 300
+//         ? `The bill was ${value}, the tip was ${value * (15 / 100)}, and the total value ${value + (value * 15) / 100}”`
+//         : `The bill was ${value}, the tip was ${value * (20 / 100)}, and the total value ${value + (value * 20) / 100}”`;
+// };
+// console.log(CalculateTips(400));
 //# sourceMappingURL=index.js.map
