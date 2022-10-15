@@ -18,7 +18,7 @@ const hoobies = ["sports", "coding"];
 const activeHoodies = ["hiking", ...hoobies];
 console.log(activeHoodies);
 const person = {
-    name: "kyaw",
+    firstName: "kyaw",
     age: 18,
 };
 const copiedPersoonData = Object.assign({}, person);
@@ -30,4 +30,8 @@ const add = (...numbers) => {
 };
 const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
 console.log(addNumbers);
+// array desture
+const [hobby1, hobby2] = hoobies;
+//object desture
+const { firstName, age } = person;
 //# sourceMappingURL=app.js.map
