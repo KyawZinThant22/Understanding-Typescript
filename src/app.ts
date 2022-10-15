@@ -52,4 +52,5 @@ console.log(addNumbers);
 
 // array desture
 const [hobby1, hobby2] = hoobies;
+//object desture
 const { firstName, age } = person;
