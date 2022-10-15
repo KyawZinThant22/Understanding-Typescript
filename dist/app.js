@@ -10,7 +10,7 @@
 // }
 // console.log(namename);
 // gen();
-const add = (a, b) => a + b;
+const add = (a, b = 5) => a + b;
 const printOutPut = (outPut) => console.log(outPut);
-printOutPut(add(5, 7));
+printOutPut(add(5));
 //# sourceMappingURL=app.js.map

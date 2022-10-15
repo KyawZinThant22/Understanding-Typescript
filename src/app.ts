@@ -15,9 +15,9 @@
 
 // gen();
 
-const add = (a: number, b: number): number => a + b;
+const add = (a: number, b: number = 5): number => a + b;
 
 const printOutPut: (a: number | string) => void = (outPut) =>
   console.log(outPut);
 
-printOutPut(add(5, 7));
+printOutPut(add(5));
