@@ -28,12 +28,12 @@ const activeHoodies: string[] = ["hiking", ...hoobies];
 console.log(activeHoodies);
 
 type personProp = {
-  name: string;
+  firstName: string;
   age: number;
 };
 
 const person: personProp = {
-  name: "kyaw",
+  firstName: "kyaw",
   age: 18,
 };
 
@@ -49,3 +49,7 @@ const add = (...numbers: number[]) => {
 
 const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
 console.log(addNumbers);
+
+// array desture
+const [hobby1, hobby2] = hoobies;
+const { firstName, age } = person;
