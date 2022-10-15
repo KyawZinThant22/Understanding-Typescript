@@ -10,7 +10,17 @@
 // }
 // console.log(namename);
 // gen();
-const add = (a, b = 5) => a + b;
-const printOutPut = (outPut) => console.log(outPut);
-printOutPut(add(5));
+// const add = (a: number, b: number = 5): number => a + b;
+// const printOutPut: (a: number | string) => void = (outPut) =>
+//   console.log(outPut);
+// printOutPut(add(5));
+const hoobies = ["sports", "coding"];
+const activeHoodies = ["hiking", ...hoobies];
+console.log(activeHoodies);
+const person = {
+    name: "kyaw",
+    age: 18,
+};
+const copiedPersoonData = Object.assign({}, person);
+console.log(copiedPersoonData);
 //# sourceMappingURL=app.js.map

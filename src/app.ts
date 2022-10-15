@@ -15,9 +15,28 @@
 
 // gen();
 
-const add = (a: number, b: number = 5): number => a + b;
+// const add = (a: number, b: number = 5): number => a + b;
 
-const printOutPut: (a: number | string) => void = (outPut) =>
-  console.log(outPut);
+// const printOutPut: (a: number | string) => void = (outPut) =>
+//   console.log(outPut);
 
-printOutPut(add(5));
+// printOutPut(add(5));
+
+const hoobies: string[] = ["sports", "coding"];
+const activeHoodies: string[] = ["hiking", ...hoobies];
+
+console.log(activeHoodies);
+
+type personProp = {
+  name: string;
+  age: number;
+};
+
+const person: personProp = {
+  name: "kyaw",
+  age: 18,
+};
+
+const copiedPersoonData: personProp = { ...person };
+
+console.log(copiedPersoonData);
