@@ -23,4 +23,11 @@ const person = {
 };
 const copiedPersoonData = Object.assign({}, person);
 console.log(copiedPersoonData);
+const add = (...numbers) => {
+    return numbers.reduce((curResult, curValue) => {
+        return curResult + curValue;
+    }, 0);
+};
+const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
+console.log(addNumbers);
 //# sourceMappingURL=app.js.map
