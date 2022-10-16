@@ -22,35 +22,47 @@
 
 // printOutPut(add(5));
 
-const hoobies: string[] = ["sports", "coding"];
-const activeHoodies: string[] = ["hiking", ...hoobies];
+// const hoobies: string[] = ["sports", "coding"];
+// const activeHoodies: string[] = ["hiking", ...hoobies];
 
-console.log(activeHoodies);
+// console.log(activeHoodies);
 
-type personProp = {
-  firstName: string;
-  age: number;
-};
+// type personProp = {
+//   firstName: string;
+//   age: number;
+// };
 
-const person: personProp = {
-  firstName: "kyaw",
-  age: 18,
-};
+// const person: personProp = {
+//   firstName: "kyaw",
+//   age: 18,
+// };
 
-const copiedPersoonData: personProp = { ...person };
+// const copiedPersoonData: personProp = { ...person };
 
-console.log(copiedPersoonData);
+// console.log(copiedPersoonData);
 
-const add = (...numbers: number[]) => {
-  return numbers.reduce((curResult, curValue) => {
-    return curResult + curValue;
-  }, 0);
-};
+// const add = (...numbers: number[]) => {
+//   return numbers.reduce((curResult, curValue) => {
+//     return curResult + curValue;
+//   }, 0);
+// };
 
-const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
-console.log(addNumbers);
+// const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
+// console.log(addNumbers);
 
-// array desture
-const [hobby1, hobby2] = hoobies;
-//object desture
-const { firstName, age } = person;
+// // array desture
+// const [hobby1, hobby2] = hoobies;
+// //object desture
+// const { firstName, age } = person;
+
+class Department {
+  name: string;
+
+  constructor(n: string) {
+    this.name = n;
+  }
+}
+
+const accounting = new Department("Accounting");
+
+console.log(accounting);

@@ -14,24 +14,34 @@
 // const printOutPut: (a: number | string) => void = (outPut) =>
 //   console.log(outPut);
 // printOutPut(add(5));
-const hoobies = ["sports", "coding"];
-const activeHoodies = ["hiking", ...hoobies];
-console.log(activeHoodies);
-const person = {
-    firstName: "kyaw",
-    age: 18,
-};
-const copiedPersoonData = Object.assign({}, person);
-console.log(copiedPersoonData);
-const add = (...numbers) => {
-    return numbers.reduce((curResult, curValue) => {
-        return curResult + curValue;
-    }, 0);
-};
-const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
-console.log(addNumbers);
-// array desture
-const [hobby1, hobby2] = hoobies;
-//object desture
-const { firstName, age } = person;
-//# sourceMappingURL=app.js.map
+// const hoobies: string[] = ["sports", "coding"];
+// const activeHoodies: string[] = ["hiking", ...hoobies];
+// console.log(activeHoodies);
+// type personProp = {
+//   firstName: string;
+//   age: number;
+// };
+// const person: personProp = {
+//   firstName: "kyaw",
+//   age: 18,
+// };
+// const copiedPersoonData: personProp = { ...person };
+// console.log(copiedPersoonData);
+// const add = (...numbers: number[]) => {
+//   return numbers.reduce((curResult, curValue) => {
+//     return curResult + curValue;
+//   }, 0);
+// };
+// const addNumbers = add(4, 5, 6, 7, 8, 9, 34, 2, 4);
+// console.log(addNumbers);
+// // array desture
+// const [hobby1, hobby2] = hoobies;
+// //object desture
+// const { firstName, age } = person;
+class Department {
+    constructor(n) {
+        this.name = n;
+    }
+}
+const accounting = new Department("Accounting");
+console.log(accounting);
