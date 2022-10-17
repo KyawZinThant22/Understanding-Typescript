@@ -59,7 +59,7 @@ class Department {
   // private name: string;
   private employess: string[] = [];
 
-  constructor(public name: string, public id: string) {}
+  constructor(public name: string, public readonly id: string) {}
   describe(this: Department) {
     console.log(`Department ${this.id} : ${this.name}`);
   }
