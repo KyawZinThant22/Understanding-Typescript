@@ -39,12 +39,14 @@
 // //object desture
 // const { firstName, age } = person;
 class Department {
-    constructor(n) {
+    constructor(name, id) {
+        this.name = name;
+        this.id = id;
+        // private name: string;
         this.employess = [];
-        this.name = n;
     }
     describe() {
-        console.log("Department :" + this.name);
+        console.log(`Department ${this.id} : ${this.name}`);
     }
     addNewEmployes(employess) {
         this.employess.push(employess);
@@ -54,7 +56,7 @@ class Department {
         console.log(this.employess);
     }
 }
-const accounting = new Department("Accounting");
+const accounting = new Department("d1", "Accounting");
 accounting.describe();
 accounting.addNewEmployes("kyaw");
 accounting.addNewEmployes("brian");

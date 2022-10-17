@@ -56,14 +56,12 @@
 // const { firstName, age } = person;
 
 class Department {
-  name: string;
+  // private name: string;
   private employess: string[] = [];
 
-  constructor(n: string) {
-    this.name = n;
-  }
+  constructor(public name: string, public id: string) {}
   describe(this: Department) {
-    console.log("Department :" + this.name);
+    console.log(`Department ${this.id} : ${this.name}`);
   }
 
   addNewEmployes(employess: string) {
@@ -76,7 +74,7 @@ class Department {
   }
 }
 
-const accounting = new Department("Accounting");
+const accounting = new Department("d1", "Accounting");
 accounting.describe();
 accounting.addNewEmployes("kyaw");
 accounting.addNewEmployes("brian");
