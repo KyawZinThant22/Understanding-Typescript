@@ -56,8 +56,37 @@ class Department {
         console.log(this.employess);
     }
 }
-const accounting = new Department("d1", "Accounting");
-accounting.describe();
-accounting.addNewEmployes("kyaw");
-accounting.addNewEmployes("brian");
-accounting.printAllEmployesInformation();
+class ITDepartment extends Department {
+    constructor(id, admins) {
+        super("IT", id);
+        this.admins = admins;
+    }
+}
+const It = new ITDepartment("d1", ["Brian"]);
+It.describe();
+It.addNewEmployes("kyaw");
+It.addNewEmployes("brian");
+It.printAllEmployesInformation();
+class AccountingDepartment extends Department {
+    constructor(id, reports) {
+        super("Accounting", id);
+        this.reports = reports;
+    }
+    addReports(text) {
+        this.reports.push(text);
+    }
+    printReports() {
+        console.log(this.reports);
+    }
+    howManyReport() {
+        console.log(this.reports.length);
+    }
+    describe() {
+        console.log(`${this.name} has ${this.reports.length < 0 ? 0 : this.reports.length} reports ${this.reports.length > 0 ? `and they are ${this.reports} ` : ""}`);
+    }
+}
+const AccountDep = new AccountingDepartment("d2", []);
+AccountDep.addReports("Jack sports Ui done");
+AccountDep.addReports("App studio Ecommence Ui done");
+AccountDep.describe();
+console.log(AccountDep);
