@@ -1,5 +1,5 @@
 interface Person {
-  name: string;
+  name?: string;
   age: number;
   greet(name: string): void;
 }
