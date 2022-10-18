@@ -29,3 +29,13 @@ user2 = {
   },
   nickName: "kyawzinthant",
 };
+
+interface addFun {
+  (a: number, b: number): number;
+}
+
+type AddFun = (a: number, b: number) => number;
+
+let add: addFun;
+
+add = (n: number, n2: number) => n + n2;
