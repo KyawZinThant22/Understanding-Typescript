@@ -84,9 +84,17 @@ class AccountingDepartment extends Department {
     describe() {
         console.log(`${this.name} has ${this.reports.length < 0 ? 0 : this.reports.length} reports ${this.reports.length > 0 ? `and they are ${this.reports} ` : ""}`);
     }
+    addNewEmployes(name) {
+        if (name === "brian") {
+            return;
+        }
+        this.employess.push(name);
+    }
 }
 const AccountDep = new AccountingDepartment("d2", []);
 AccountDep.addReports("Jack sports Ui done");
 AccountDep.addReports("App studio Ecommence Ui done");
 AccountDep.describe();
-console.log(AccountDep);
+AccountDep.addNewEmployes("Max");
+AccountDep.addNewEmployes("brian");
+AccountDep.printAllEmployesInformation();

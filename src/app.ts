@@ -57,7 +57,7 @@
 
 class Department {
   // private name: string;
-  private employess: string[] = [];
+  protected employess: string[] = [];
 
   constructor(public name: string, public readonly id: string) {}
   describe(this: Department) {
@@ -112,6 +112,13 @@ class AccountingDepartment extends Department {
       }`
     );
   }
+
+  addNewEmployes(name: string) {
+    if (name === "brian") {
+      return;
+    }
+    this.employess.push(name);
+  }
 }
 
 const AccountDep = new AccountingDepartment("d2", []);
@@ -120,4 +127,6 @@ AccountDep.addReports("Jack sports Ui done");
 AccountDep.addReports("App studio Ecommence Ui done");
 
 AccountDep.describe();
-console.log(AccountDep);
+AccountDep.addNewEmployes("Max");
+AccountDep.addNewEmployes("brian");
+AccountDep.printAllEmployesInformation();
