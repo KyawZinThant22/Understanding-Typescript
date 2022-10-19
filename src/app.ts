@@ -1,41 +1,21 @@
-interface Person {
-  name?: string;
-  age: number;
-  greet(name: string): void;
+// intersection types mean combiming types
+
+interface Admin {
+  name: string;
+  privileage: string[];
 }
 
-interface Person2 extends Person {
-  nickName: string;
+interface Employe {
+  name: string;
+  startDate: Date;
 }
 
-let user1: Person;
-let user2: Person2;
+interface CombinedTypes extends Admin, Employe {}
 
-user1 = {
-  name: "Brian",
-  age: 18,
-  greet(phrase: string) {
-    console.log(phrase + " " + this.name);
-  },
+type CombinationofTypes = Admin & Employe;
+
+const brian: CombinedTypes = {
+  name: "kyaw",
+  privileage: ["server", "accept"],
+  startDate: new Date(),
 };
-
-user1.greet("Hello I am");
-
-user2 = {
-  name: "Chrollo Zoldyck",
-  age: 18,
-  greet(phrase: string) {
-    console.log(phrase + " " + this.name);
-  },
-  nickName: "kyawzinthant",
-};
-
-interface addFun {
-  (a: number, b: number): number;
-}
-
-type AddFun = (a: number, b: number) => number;
-
-let add: addFun;
-
-add = (n: number, n2: number) => n + n2;
