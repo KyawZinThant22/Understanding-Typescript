@@ -15,3 +15,19 @@ function printEmployeInformation(emp) {
     }
 }
 printEmployeInformation(brian);
+function moveAnimal(animal) {
+    let speed;
+    switch (animal.type) {
+        case "bird":
+            speed = animal.flyingSpeed;
+            break;
+        case "horse":
+            speed = animal.runningSpeed;
+    }
+    console.log("Rnuung Speed is ", speed);
+}
+let SarKalay = {
+    type: "bird",
+    flyingSpeed: 100,
+};
+moveAnimal(SarKalay);
