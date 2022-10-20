@@ -31,3 +31,6 @@ let SarKalay = {
     flyingSpeed: 100,
 };
 moveAnimal(SarKalay);
+// const userInput = <HTMLInputElement>document.getElementById("user-input")!;
+const userInput = document.getElementById("user-input");
+userInput.value = "hello";
